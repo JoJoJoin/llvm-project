@@ -316,7 +316,7 @@ if(NOT HAVE_STD_REGEX AND NOT HAVE_GNU_POSIX_REGEX AND NOT HAVE_POSIX_REGEX)
 endif()
 if (NOT BENCHMARK_ENABLE_EXCEPTIONS AND HAVE_STD_REGEX
         AND NOT HAVE_GNU_POSIX_REGEX AND NOT HAVE_POSIX_REGEX)
-  message(WARNING "Using std::regex with exceptions disabled is not fully supported")
+  message(STATUS "Using std::regex with exceptions disabled is not fully supported")
 endif()
 
 cxx_feature_check(STEADY_CLOCK)
